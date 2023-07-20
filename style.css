@@ -18,10 +18,11 @@ body {
 }
 
 .sidebar {
+  min-width: 250px;
   grid-row: 1 / 4;
   display: grid;
-  grid-template-columns: 1fr 6fr;
-  justify-items: start;
+  grid-template-columns: 1fr 3fr;
+  justify-content: start;
   align-content: start;
   padding: 10px;
   background-color: #7e22ce;
@@ -30,8 +31,10 @@ body {
 .main {
   grid-row: span 2;
   display: grid;
-  grid-template-columns: 6fr, 3fr;
+  grid-template-columns: 5fr, 3fr;
   padding: 25px;
+  gap: 10px;
+  background-color: #d8b4fe;
 }
 
 .project-area {
@@ -42,11 +45,19 @@ body {
   grid-auto-flow: column;
 }
 
+.project-header {
+  grid-column: 1 / 2;
+}
+
+.announce-header {
+  grid-column: 2 / 3;
+}
+
 .card {
   grid-column: 200px / 200px;
   height: 200px;
-  width: 0.5fr;
   border: 1px solid black;
+  background-color: white;
 }
 
 .card:nth-child(1),
@@ -97,10 +108,11 @@ body {
 .sidebar-subheading {
   grid-column: 1 / 3;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3.2fr;
   align-items: center;
-  gap: 10px;
+  justify-items: start;
   margin-left: 25px;
+  margin-right: 25px;
   color: white;
   font-weight: 600;
 }
@@ -154,7 +166,6 @@ body {
 }
 
 .bottom-bar {
-  border: 2px solid magenta;
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
@@ -184,7 +195,6 @@ body {
   width: 45px;
   filter: invert(11%) sepia(98%) saturate(7078%) hue-rotate(358deg) brightness(97%) contrast(110%);
   grid-row: 1 / 3;
-  border: 1px solid red;
   margin: 0;
 }
 
@@ -198,6 +208,7 @@ body {
 }
 
 .file-button {
+  width: 90px;
   border-style: none;
   border-radius: 15px;
   padding: 5px 25px;
