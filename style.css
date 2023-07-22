@@ -33,11 +33,10 @@ body {
 }
 
 .main {
-  grid-row: span 2;
   display: grid;
   grid-template-columns: 5fr 2fr;
-  padding: 25px;
-  gap: 25px;
+  padding: 35px;
+  gap: 35px;
   background-color: #d8b4fe;
 }
 
@@ -45,7 +44,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 25px;
+  gap: 35px;
 }
 
 .project-header {
@@ -56,9 +55,21 @@ body {
   grid-column: 2 / 3;
 }
 
+.project-header,
+.announce-header {
+  margin: 0;
+  padding: 0;
+}
+
+.trending-title {
+  margin: 0;
+  align-self: last baseline;
+  padding: 5px 0;
+}
+
 .card {
   grid-column: 1fr / 1fr;
-  height: 200px;
+  height: 1fr;
   background-color: white;
   display: grid;
   padding: 25px;
@@ -75,6 +86,10 @@ body {
   padding: 0 10px;
 }
 
+.card-button:hover {
+  cursor: pointer;
+}
+
 .button-area {
   justify-self: end;
 }
@@ -82,7 +97,7 @@ body {
 .main-side-container {
   grid-column: 2 / 3;
   display: grid;
-  grid-template-rows: 5fr 0.5fr 5fr;
+  grid-template-rows: 4fr 1fr 5fr;
 }
 
 .top-half-container {
@@ -127,8 +142,8 @@ body {
 }
 
 .trend-logo {
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
 }
 
 .dash-logo {
@@ -268,12 +283,26 @@ body {
 }
 
 .file-button {
-  width: 90px;
+  width: 1fr;
   border-style: none;
-  border-radius: 15px;
-  padding: 5px 25px;
+  border-radius: 45px;
+  padding: 10px 25px;
   background-color: #7e22ce;
   color: white;
   margin-left: 15px;
   font-weight: 600;
+}
+
+.file-button:hover,
+.notification-icon:hover {
+  cursor: pointer;
+}
+
+.card-text,
+.announce-text {
+  color: gray;
+}
+
+.handle-container {
+  margin-left: 15px;
 }
