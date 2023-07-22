@@ -205,11 +205,11 @@ body {
   width: 550px;
   background-color: #d8b4fe;
   border-radius: 15px;
-  margin-right: 385px;
+  margin-right: 580px;
 }
 
 .search-icon {
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 #profile-pic {
@@ -221,7 +221,7 @@ body {
 .search-bar {
   display: grid;
   grid-auto-flow: column;
-  justify-content: end;
+  justify-content: space-between;
   gap: 25px;
   align-items: center;
 }
